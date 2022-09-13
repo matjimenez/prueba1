@@ -1,8 +1,21 @@
-<section>
-  <label for="">id</label>
-  <label for="">nombre de la seccion</label>
+<h1>clase</h1>
+<fieldset>
+
+  <label for="">seccion</label> <br>
+  <input
+  type="text"
+  name="seccion"
+  (input)="nuevaSeccion($event)"
+  > <br> <br>
+
+  <label for="">{{id}}</label> <br>
+  <button
+  (click)="aumentarId()">id</button><br> <br>
 
 
-</section>
+  <button
+  (click)="crear($event)"
+  >crear</button>
+</fieldset>
 
 

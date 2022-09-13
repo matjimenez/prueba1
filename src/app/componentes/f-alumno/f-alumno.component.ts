@@ -1,4 +1,5 @@
-import { Component, Input  } from '@angular/core';
+import { Component, Input, Output, EventEmitter  } from '@angular/core';
+
 
 @Component({
   selector: 'app-f-alumno',
@@ -6,6 +7,29 @@ import { Component, Input  } from '@angular/core';
   styleUrls: ['./f-alumno.component.scss']
 })
 export class FAlumnoComponent {
+
+  @Output() public salida = new EventEmitter();
+  @Output() public salidaString = new EventEmitter<String>();
+
+  public nuevoRut(evento: Event):void{
+    const elemento = evento.target as HTMLInputElement;
+    this.salida.emit();
+  }
+
+  public nuevoNombre(evento: Event):void{
+    const elemento = evento.target as HTMLInputElement;
+    this.salida.emit();
+  }
+
+  public nuevoApellido(evento: Event):void{
+    const elemento = evento.target as HTMLInputElement;
+    this.salida.emit();
+  }
+
+  public nuevaEdad(evento: Event):void{
+    const elemento = evento.target as HTMLInputElement;
+    this.salida.emit();
+  }
 
 
 

@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'prueba1';
 
-  public crear(event : Event):void{
 
-  }
 
 }
